@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Saludo</title>
+</head>
+<body>
+<script language="JavaScript">
+var name=prompt("Introduce tu nombre, por favor.","nombre");
+var today = new Date ()
+var hrs = today.getHours();
+document.writeln("<b><font size=4 face='Comic Sans MS'>");
+document.writeln("<b>");
+if (hrs <= 12)
+        document.write("Buenos días "+name+'!');
+else if (hrs <= 22)
+        document.write("Buenas tardes "+name+'!');
+else
+     document.write("Buenas noches "+name+'!'); document.writeln("<br>");
+</script></body>
+</html>
+

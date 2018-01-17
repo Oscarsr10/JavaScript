@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Calculo de numeros primos</title>
+ 
+<h3>Los números primos entre 1 y 100 son:</h3>
+<script language=javascript>
+var i,j,primo;
+document.write('1<br>');
+document.write('2<br>');
+document.write('3<br>');
+for(i=4;i<=100;i++)
+{
+    primo=0;
+    for(j=2;j<i;j++)
+    {
+	if(i%j==0) primo=1;
+    }
+    if (primo==0) {document.write(i); document.write('<br>');}
+}
+</script>
+</body>
+</html>

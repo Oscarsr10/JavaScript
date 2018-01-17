@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Barra de estado</title>
+<body>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+var scrtxt="Est es el texto que se vara moviendose "+"por el la barra de estado...";
+var lentxt=scrtxt.length;
+var width=100;
+var pos=1-width;
+function scroll() {
+pos++;
+var scroller="";
+if (pos==lentxt) {
+pos=1-width;
+}
+if (pos<0) {
+for (var i=1; i<=Math.abs(pos); i++) {
+scroller=scroller+" ";
+}
+scroller=scroller+scrtxt.substring(0,width-i+1);
+}
+else {
+scroller=scroller+scrtxt.substring(pos,width+pos);
+}
+window.status = scroller;
+setTimeout("scroll()",150); /*función que repite su elecuta su primer argumento cada vez que transcurre el tiemp indicado en su segundo argumento (milisegundos) */
+}
+//-->
+</SCRIPT></HEAD>
+<BODY onLoad="scroll();return true;">
+Prueba de una función JavaScrip que muestra un texto movil en la barra de estado de la pagina.
+</BODY>
+</HTML>
